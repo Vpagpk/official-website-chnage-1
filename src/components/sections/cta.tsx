@@ -67,19 +67,19 @@ const CtaSection = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-16 pt-16 border-t border-zinc-800/50 animate-fade-in animate-delay-500">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="mt-12 sm:mt-14 md:mt-16 pt-12 sm:pt-14 md:pt-16 border-t border-zinc-800/50 animate-fade-in animate-delay-500">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
               <div className="text-center group">
-                <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">22+</div>
-                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300">Years Experience</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">22+</div>
+                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300 text-xs sm:text-sm md:text-base">Years Experience</p>
               </div>
               <div className="text-center group">
-                <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">1.1k+</div>
-                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300">Happy Clients</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">1.1k+</div>
+                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300 text-xs sm:text-sm md:text-base">Happy Clients</p>
               </div>
               <div className="text-center group">
-                <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">1k+</div>
-                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300">Performances</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-400 mb-2 group-hover:scale-110 transition-transform duration-300">1k+</div>
+                <p className="text-zinc-400 font-semibold group-hover:text-zinc-300 transition-colors duration-300 text-xs sm:text-sm md:text-base">Performances</p>
               </div>
             </div>
           </div>
