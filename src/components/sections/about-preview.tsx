@@ -98,31 +98,31 @@ const AboutPreview = () => {
             </div>
 
             {/* Right Image with Enhanced Effects */}
-            <div className="relative group animate-fade-in animate-delay-300">
+            <div className="relative group animate-fade-in animate-delay-300 order-1 lg:order-2 mb-8 lg:mb-0">
               {/* Glow Effect */}
-              <div className="absolute -inset-8 bg-gradient-to-r from-primary/30 via-amber-500/20 to-primary/30 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+              <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 bg-gradient-to-r from-primary/30 via-amber-500/20 to-primary/30 rounded-2xl sm:rounded-3xl blur-2xl sm:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
               
               {/* Decorative Elements */}
-              <div className="absolute -top-6 -left-6 w-32 h-32 border-4 border-primary/20 rounded-3xl rotate-12 group-hover:rotate-24 transition-transform duration-700"></div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-primary/10 rounded-3xl -rotate-12 group-hover:-rotate-24 transition-transform duration-700"></div>
+              <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 border-2 sm:border-3 md:border-4 border-primary/20 rounded-2xl sm:rounded-3xl rotate-12 group-hover:rotate-24 transition-transform duration-700"></div>
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 border-2 sm:border-3 md:border-4 border-primary/10 rounded-2xl sm:rounded-3xl -rotate-12 group-hover:-rotate-24 transition-transform duration-700"></div>
 
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-3xl">
+              <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10 group-hover:from-primary/30 transition-colors duration-500"></div>
                 <Image
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/663181b5-8337-4075-ab8c-a7be9fcca289-a558ba3c-1f21-45e6-ae1c-865779d39d5a-00-1mtjwxz4tb9hm-sisko-replit-dev/assets/images/next-152755-about-image-B8DwQPlU-2.jpg?"
                   alt="V.PAG Dance Company master performing traditional Pakistani classical Kathak dance in ornate cultural costume with precise hand gestures and expressions showcasing years of artistic training"
                   width={600}
                   height={700}
-                  className="relative w-full h-[500px] lg:h-[700px] object-cover shadow-2xl transition-all duration-700 group-hover:scale-110 will-change-transform"
+                  className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] object-cover shadow-2xl transition-all duration-700 group-hover:scale-105 sm:group-hover:scale-110 will-change-transform"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-zinc-900 to-black border-2 border-primary/50 rounded-2xl px-8 py-4 shadow-2xl backdrop-blur-xl animate-float">
-                <p className="text-primary font-black text-2xl">22+ Years</p>
-                <p className="text-zinc-300 text-sm font-semibold">of Excellence</p>
+              <div className="absolute -bottom-4 sm:-bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-zinc-900 to-black border-2 border-primary/50 rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 py-3 sm:py-4 shadow-2xl backdrop-blur-xl animate-float">
+                <p className="text-primary font-black text-lg sm:text-xl md:text-2xl">22+ Years</p>
+                <p className="text-zinc-300 text-xs sm:text-sm font-semibold">of Excellence</p>
               </div>
             </div>
           </div>
