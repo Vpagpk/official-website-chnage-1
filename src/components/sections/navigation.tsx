@@ -66,8 +66,8 @@ const Navigation = () => {
           </nav>
 
           <button
-            className="relative p-2 md:hidden hover:bg-zinc-800/50 rounded-lg transition-colors"
-            aria-label="Open mobile menu"
+            className="relative p-3 md:hidden hover:bg-zinc-800/50 rounded-lg transition-colors touch-manipulation"
+            aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="flex h-5 w-6 flex-col justify-between">
