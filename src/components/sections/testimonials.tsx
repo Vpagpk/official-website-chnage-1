@@ -65,22 +65,22 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimon
         ))}
       </div>
       
-      <p className="text-zinc-300 flex-grow leading-relaxed text-base mb-8 group-hover:text-zinc-200 transition-colors duration-300">"{testimonial.quote}"</p>
+      <p className="text-zinc-300 flex-grow leading-relaxed text-sm sm:text-base mb-6 sm:mb-8 group-hover:text-zinc-200 transition-colors duration-300">"{testimonial.quote}"</p>
       
-      <div className="flex items-center gap-4 pt-6 border-t border-zinc-800/50 group-hover:border-primary/20 transition-colors duration-500">
-        <div className="relative">
+      <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-zinc-800/50 group-hover:border-primary/20 transition-colors duration-500">
+        <div className="relative flex-shrink-0">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
           <Image
             src={testimonial.avatarUrl}
             alt={testimonial.name}
-            width={56}
-            height={56}
-            className="relative rounded-full bg-zinc-800 object-cover ring-2 ring-zinc-700 group-hover:ring-primary transition-all duration-500"
+            width={48}
+            height={48}
+            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-zinc-800 object-cover ring-2 ring-zinc-700 group-hover:ring-primary transition-all duration-500"
           />
         </div>
-        <div>
-          <h4 className="font-bold text-white text-lg group-hover:text-primary transition-colors duration-300">{testimonial.name}</h4>
-          <p className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300">{testimonial.role}</p>
+        <div className="min-w-0 flex-1">
+          <h4 className="font-bold text-white text-base sm:text-lg group-hover:text-primary transition-colors duration-300 leading-tight">{testimonial.name}</h4>
+          <p className="text-xs sm:text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300 leading-tight">{testimonial.role}</p>
         </div>
       </div>
     </div>
