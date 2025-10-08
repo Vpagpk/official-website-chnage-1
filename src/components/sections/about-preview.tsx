@@ -50,19 +50,19 @@ const FeatureCard = ({ icon: Icon, title, description, index }: { icon: any; tit
 
 const AboutPreview = () => {
   return (
-    <section className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 relative py-28 md:py-36 overflow-hidden">
+    <section className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 relative py-16 sm:py-20 md:py-28 lg:py-36 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-0 left-0 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-0 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
             {/* Left Content */}
             <div className="space-y-10 animate-fade-in">
               <div className="space-y-4">
