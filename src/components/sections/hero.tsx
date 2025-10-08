@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
 
           {/* Stats Grid with Enhanced Design */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto px-4 md:px-0 animate-fade-in animate-delay-900">
+          <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-5xl mx-auto px-4 sm:px-6 animate-fade-in animate-delay-900">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -123,16 +123,16 @@ const HeroSection = () => {
                 style={{ animationDelay: `${1000 + index * 150}ms` }}
               >
                 {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 rounded-xl sm:rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 
                 {/* Card Content */}
-                <div className="relative text-center p-10 border-2 border-zinc-800/80 hover:border-primary/50 bg-gradient-to-br from-zinc-900/80 via-zinc-900/60 to-zinc-950/80 backdrop-blur-2xl shadow-2xl rounded-2xl transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-primary/10 will-change-transform">
+                <div className="relative text-center p-4 sm:p-6 md:p-8 lg:p-10 border-2 border-zinc-800/80 hover:border-primary/50 bg-gradient-to-br from-zinc-900/80 via-zinc-900/60 to-zinc-950/80 backdrop-blur-2xl shadow-2xl rounded-xl sm:rounded-2xl transition-all duration-500 group-hover:-translate-y-1 sm:group-hover:-translate-y-3 group-hover:shadow-primary/10 will-change-transform">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
-                  <div className="font-display text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-primary via-amber-400 to-primary mb-4 transition-transform duration-500 group-hover:scale-125 drop-shadow-2xl animate-pulse-subtle">
+                  <div className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-primary via-amber-400 to-primary mb-2 sm:mb-3 md:mb-4 transition-transform duration-500 group-hover:scale-110 sm:group-hover:scale-125 drop-shadow-2xl animate-pulse-subtle">
                     {stat.value}
                   </div>
-                  <p className="text-lg text-zinc-300 font-bold tracking-wider uppercase text-xs transition-colors duration-300 group-hover:text-white">
+                  <p className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-bold tracking-wider uppercase transition-colors duration-300 group-hover:text-white leading-tight">
                     {stat.label}
                   </p>
                 </div>
