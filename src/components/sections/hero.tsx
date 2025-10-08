@@ -58,8 +58,8 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
 
-      <div className="relative z-10 container py-32 pt-40">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="relative z-10 container py-20 sm:py-24 md:py-32 pt-28 sm:pt-32 md:pt-40">
+        <div className="max-w-6xl mx-auto text-center">
           {/* Main Heading with Staggered Animation */}
           <div className="animate-fade-in animate-duration-1000 px-4 sm:px-6">
             <h1 className="font-display text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 sm:mb-10 tracking-tighter">
