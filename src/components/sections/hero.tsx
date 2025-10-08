@@ -91,11 +91,11 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons with Enhanced Hover Effects */}
-          <div className="flex flex-col sm:flex-row gap-6 md:gap-8 justify-center mb-20 px-4 md:px-0 animate-fade-in animate-delay-700">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center mb-16 sm:mb-20 px-4 sm:px-6 animate-fade-in animate-delay-700">
             <Link href="/services" passHref>
               <Button
                 size="lg"
-                className="group h-14 px-10 text-lg font-bold transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden"
+                className="group w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg font-bold transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden"
                 aria-label="Book a Sufi dance performance"
               >
                 <span className="relative z-10">Book Sufi Performance</span>
@@ -106,7 +106,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="h-14 px-10 text-lg font-bold border-2 border-zinc-700 bg-zinc-900/70 backdrop-blur-xl transition-all duration-500 hover:bg-primary/10 hover:border-primary hover:text-primary hover:scale-110 hover:shadow-2xl hover:shadow-primary/20 active:scale-95"
+                className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg font-bold border-2 border-zinc-700 bg-zinc-900/70 backdrop-blur-xl transition-all duration-500 hover:bg-primary/10 hover:border-primary hover:text-primary hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/20 active:scale-95"
                 aria-label="View the dance gallery"
               >
                 View Dance Gallery
