@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 31536000, // 1 year
   },
   outputFileTracingRoot: path.resolve(__dirname, '../../'),
   turbopack: {
@@ -23,7 +25,12 @@ const nextConfig: NextConfig = {
         loaders: [LOADER]
       }
     }
-  }
+  },
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+  },
+  compress: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;
