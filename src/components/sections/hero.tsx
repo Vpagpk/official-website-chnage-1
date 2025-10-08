@@ -61,8 +61,8 @@ const HeroSection = () => {
       <div className="relative z-10 container py-32 pt-40">
         <div className="max-w-5xl mx-auto text-center">
           {/* Main Heading with Staggered Animation */}
-          <div className="animate-fade-in animate-duration-1000">
-            <h1 className="font-display text-5xl font-black leading-[1.1] text-white sm:text-6xl md:text-7xl lg:text-8xl mb-10 tracking-tighter">
+          <div className="animate-fade-in animate-duration-1000 px-4 sm:px-6">
+            <h1 className="font-display text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 sm:mb-10 tracking-tighter">
               <span className="inline-block animate-slide-up">Premier</span>{' '}
               <span className="inline-block animate-slide-up animate-delay-100 text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary drop-shadow-2xl">
                 Cultural Dance
