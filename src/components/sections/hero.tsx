@@ -72,20 +72,20 @@ const HeroSection = () => {
           </div>
 
           {/* Feature List with Enhanced Icons */}
-          <div className="animate-fade-in animate-delay-300 animate-duration-1000 text-xl md:text-2xl text-zinc-100 mb-14 space-y-6 leading-relaxed max-w-3xl mx-auto px-4 md:px-0">
+          <div className="animate-fade-in animate-delay-300 animate-duration-1000 text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-100 mb-12 sm:mb-14 space-y-4 sm:space-y-6 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center gap-5 group animate-slide-up"
+                className="flex items-start sm:items-center justify-start sm:justify-center gap-3 sm:gap-4 md:gap-5 group animate-slide-up"
                 style={{ animationDelay: `${400 + index * 100}ms` }}
               >
-                <div className="relative">
+                <div className="relative flex-shrink-0">
                   <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <span className="relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary shadow-lg group-hover:scale-125 group-hover:border-primary group-hover:shadow-primary/50 transition-all duration-500">
-                    <feature.icon className="w-7 h-7" />
+                  <span className="relative inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary shadow-lg group-hover:scale-125 group-hover:border-primary group-hover:shadow-primary/50 transition-all duration-500">
+                    <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
                   </span>
                 </div>
-                <span className="font-semibold text-lg md:text-xl group-hover:text-primary transition-colors duration-300">{feature.text}</span>
+                <span className="font-semibold text-sm sm:text-base md:text-lg lg:text-xl group-hover:text-primary transition-colors duration-300 leading-tight">{feature.text}</span>
               </div>
             ))}
           </div>
