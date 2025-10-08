@@ -44,11 +44,11 @@ const CtaSection = () => {
             <Link
               href="/contact"
               aria-label="Get a custom quote for your event"
-              className="group relative inline-flex items-center justify-center rounded-xl bg-primary px-10 py-5 text-lg font-bold text-black transition-all duration-500 hover:bg-primary/90 hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 active:scale-95 overflow-hidden"
+              className="group relative inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-primary px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold text-black transition-all duration-500 hover:bg-primary/90 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 active:scale-95 overflow-hidden touch-manipulation"
             >
               <span className="relative z-10 flex items-center gap-3">
                 Get Custom Quote
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </Link>
@@ -56,10 +56,10 @@ const CtaSection = () => {
             <Link
               href="/gallery"
               aria-label="Watch V.PAG dance performances"
-              className="group relative inline-flex items-center justify-center rounded-xl border-2 border-zinc-700 bg-zinc-900/70 px-10 py-5 text-lg font-bold text-white transition-all duration-500 hover:border-primary hover:bg-primary/10 hover:scale-110 hover:shadow-2xl hover:shadow-primary/30 active:scale-95 backdrop-blur-xl overflow-hidden"
+              className="group relative inline-flex w-full sm:w-auto items-center justify-center rounded-xl border-2 border-zinc-700 bg-zinc-900/70 px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold text-white transition-all duration-500 hover:border-primary hover:bg-primary/10 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/30 active:scale-95 backdrop-blur-xl overflow-hidden touch-manipulation"
             >
               <span className="relative z-10 flex items-center gap-3">
-                <Play className="w-5 h-5 group-hover:scale-125 transition-transform duration-300" />
+                <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-125 transition-transform duration-300" />
                 Watch Performances
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
