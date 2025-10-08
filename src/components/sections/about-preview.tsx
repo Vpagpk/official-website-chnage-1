@@ -64,14 +64,14 @@ const AboutPreview = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
             {/* Left Content */}
-            <div className="space-y-10 animate-fade-in">
-              <div className="space-y-4">
+            <div className="space-y-8 sm:space-y-10 animate-fade-in order-2 lg:order-1">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="inline-block">
-                  <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-wider">
+                  <span className="px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider">
                     About VPAG
                   </span>
                 </div>
-                <h2 className="font-display text-5xl md:text-7xl font-black leading-[1.1] text-white tracking-tighter">
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-white tracking-tighter">
                   Pakistan's Leading{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary">
                     Cultural Arts
@@ -80,16 +80,16 @@ const AboutPreview = () => {
                 </h2>
               </div>
 
-              <div className="space-y-5">
+              <div className="space-y-4 sm:space-y-5">
                 {features.map((feature, index) => (
                   <FeatureCard key={index} {...feature} index={index} />
                 ))}
               </div>
 
-              <div className="pt-6">
+              <div className="pt-4 sm:pt-6">
                 <Link
                   href="/about"
-                  className="group relative inline-flex items-center justify-center whitespace-nowrap rounded-xl text-lg font-bold ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-110 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 px-10 py-5 h-auto overflow-hidden"
+                  className="group relative inline-flex w-full sm:w-auto items-center justify-center whitespace-nowrap rounded-xl text-base sm:text-lg font-bold ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 px-8 sm:px-10 py-4 sm:py-5 h-auto overflow-hidden touch-manipulation"
                 >
                   <span className="relative z-10">Our Heritage Story</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
