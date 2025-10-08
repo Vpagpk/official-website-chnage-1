@@ -20,14 +20,14 @@ const CtaSection = () => {
       <div className="container relative text-center px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Badge */}
-          <div className="inline-block mb-8 animate-fade-in">
-            <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-widest">
+          <div className="inline-block mb-6 sm:mb-8 animate-fade-in">
+            <span className="px-4 sm:px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-widest">
               Ready to Book?
             </span>
           </div>
 
           {/* Heading */}
-          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black text-white max-w-4xl mx-auto leading-[1.1] mb-8 tracking-tighter animate-fade-in animate-delay-100">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white max-w-5xl mx-auto leading-[1.1] mb-6 sm:mb-8 tracking-tighter animate-fade-in animate-delay-100">
             Experience Authentic{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary">
               Pakistani Culture
@@ -35,12 +35,12 @@ const CtaSection = () => {
           </h2>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-zinc-300 max-w-3xl mx-auto mb-14 leading-relaxed font-medium animate-fade-in animate-delay-200">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-300 max-w-4xl mx-auto mb-10 sm:mb-12 md:mb-14 leading-relaxed font-medium animate-fade-in animate-delay-200">
             Join 1,100+ satisfied clients. Book your cultural experience today and create unforgettable memories.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col items-center sm:flex-row gap-6 md:gap-8 justify-center animate-fade-in animate-delay-300">
+          <div className="flex flex-col items-center sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center animate-fade-in animate-delay-300">
             <Link
               href="/contact"
               aria-label="Get a custom quote for your event"
