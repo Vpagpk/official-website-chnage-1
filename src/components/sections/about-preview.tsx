@@ -29,18 +29,18 @@ const features = [
 const FeatureCard = ({ icon: Icon, title, description, index }: { icon: any; title: string; description: string; index: number }) => {
   return (
     <div 
-      className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 border-2 border-zinc-800/50 hover:border-primary/50 hover:bg-zinc-900/70 transition-all duration-500 group will-change-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+      className="flex items-start gap-3 sm:gap-4 md:gap-5 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 border-2 border-zinc-800/50 hover:border-primary/50 hover:bg-zinc-900/70 transition-all duration-500 group will-change-transform hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 touch-manipulation"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <div className="flex-shrink-0 mt-1 relative">
+      <div className="flex-shrink-0 mt-0.5 sm:mt-1 relative">
         <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
-        <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 flex items-center justify-center text-primary group-hover:scale-125 group-hover:border-primary group-hover:rotate-12 transition-all duration-500">
-          <Icon className="w-6 h-6" />
+        <div className="relative w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 flex items-center justify-center text-primary group-hover:scale-125 group-hover:border-primary group-hover:rotate-12 transition-all duration-500">
+          <Icon className="w-5 h-5 sm:w-5.5 sm:h-5.5 md:w-6 md:h-6" />
         </div>
       </div>
-      <div>
-        <strong className="text-primary font-bold text-lg block mb-2 group-hover:text-amber-400 transition-colors duration-300">{title}</strong>
-        <p className="text-zinc-300 leading-relaxed text-base group-hover:text-zinc-200 transition-colors duration-300">
+      <div className="min-w-0 flex-1">
+        <strong className="text-primary font-bold text-base sm:text-lg block mb-1.5 sm:mb-2 group-hover:text-amber-400 transition-colors duration-300 leading-tight">{title}</strong>
+        <p className="text-zinc-300 leading-relaxed text-sm sm:text-base group-hover:text-zinc-200 transition-colors duration-300">
           {description}
         </p>
       </div>
