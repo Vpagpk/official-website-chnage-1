@@ -13,8 +13,8 @@ import NewsletterSignup from "@/components/ui/newsletter-signup";
 const Footer = () => {
   return (
     <footer className="bg-black text-zinc-300" role="contentinfo">
-      <div className="container py-24">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container py-16 sm:py-20 md:py-24 px-4 sm:px-6">
+        <div className="grid grid-cols-1 gap-8 sm:gap-10 md:gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: About */}
           <div className="space-y-4 pr-0 lg:pr-8">
             <a href="/" className="mb-4 inline-block" aria-label="VPAG Home">
