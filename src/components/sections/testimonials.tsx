@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
         <div className="text-center animate-fade-in animate-delay-700">
           <Link
             href="/contact"
-            className="group relative inline-flex items-center justify-center bg-primary text-black font-bold px-10 py-5 rounded-xl shadow-lg shadow-primary/30 transition-all duration-500 hover:bg-primary/90 hover:shadow-2xl hover:shadow-primary/50 hover:scale-110 active:scale-95 text-lg overflow-hidden"
+            className="group relative inline-flex w-full sm:w-auto items-center justify-center bg-primary text-black font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-xl shadow-lg shadow-primary/30 transition-all duration-500 hover:bg-primary/90 hover:shadow-2xl hover:shadow-primary/50 hover:scale-105 sm:hover:scale-110 active:scale-95 text-base sm:text-lg overflow-hidden touch-manipulation"
           >
             <span className="relative z-10">Book Your Performance</span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
