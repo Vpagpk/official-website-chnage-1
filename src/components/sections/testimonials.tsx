@@ -89,32 +89,32 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimon
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="bg-gradient-to-b from-black via-zinc-950 to-black py-28 sm:py-36 relative overflow-hidden">
+    <section id="testimonials" className="bg-gradient-to-b from-black via-zinc-950 to-black py-16 sm:py-20 md:py-28 lg:py-36 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-0 left-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="mx-auto max-w-3xl text-center mb-20 sm:mb-24 animate-fade-in">
-          <div className="inline-block mb-6">
-            <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-wider">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="mx-auto max-w-4xl text-center mb-16 sm:mb-20 md:mb-24 animate-fade-in">
+          <div className="inline-block mb-4 sm:mb-6">
+            <span className="px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider">
               Testimonials
             </span>
           </div>
-          <h2 className="text-5xl font-black tracking-tighter text-white sm:text-6xl md:text-7xl mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter text-white mb-6 sm:mb-8">
             What People <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary">Say</span>
           </h2>
-          <p className="text-xl md:text-2xl leading-relaxed text-zinc-300 font-medium">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-zinc-300 font-medium">
             Over 22 years of excellence, thousands of happy clients, and countless memorable performances. Here's what our clients say about working with V.PAG Dance Company.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-20">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16 sm:mb-20">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} index={index} />
           ))}
