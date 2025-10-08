@@ -31,35 +31,35 @@ const serviceItems = [
 
 const ServicesPreview = () => {
   return (
-    <section className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 relative overflow-hidden py-28 md:py-36">
+    <section className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 relative overflow-hidden py-16 sm:py-20 md:py-28 lg:py-36">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-1/4 right-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="container relative z-10">
-        <div className="text-center mb-24 animate-fade-in">
-          <div className="inline-block mb-6">
-            <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-wider">
+      <div className="container relative z-10 px-4 sm:px-6">
+        <div className="text-center mb-16 sm:mb-20 md:mb-24 animate-fade-in">
+          <div className="inline-block mb-4 sm:mb-6">
+            <span className="px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider">
               Our Services
             </span>
           </div>
-          <h2 className="font-display text-5xl md:text-7xl font-black mb-8 tracking-tighter">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 sm:mb-8 tracking-tighter">
             Professional{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary">
               Dance Services
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-zinc-300 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-300 max-w-4xl mx-auto leading-relaxed font-medium">
             Comprehensive cultural dance services across Pakistan
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 sm:mb-20">
           {serviceItems.map((item, index) => (
             <div
               key={item.title}
