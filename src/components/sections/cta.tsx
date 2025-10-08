@@ -3,22 +3,22 @@ import { ArrowRight, Play } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-zinc-900 via-black to-zinc-950 py-32 md:py-40 border-t-2 border-primary/30">
+    <section className="relative overflow-hidden bg-gradient-to-br from-zinc-900 via-black to-zinc-950 py-20 sm:py-24 md:py-32 lg:py-40 border-t-2 border-primary/30">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/15 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-primary/15 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-primary/5 rounded-full blur-3xl"></div>
       </div>
 
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+      <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
       {/* Radial Light Effect */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.1),transparent_70%)]"></div>
 
-      <div className="container relative text-center">
-        <div className="max-w-5xl mx-auto">
+      <div className="container relative text-center px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
           {/* Badge */}
           <div className="inline-block mb-8 animate-fade-in">
             <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-widest">
