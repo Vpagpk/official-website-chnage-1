@@ -78,30 +78,30 @@ const Navigation = () => {
           </button>
         </div>
         
-        <div id="mobile-menu" className={cn("overflow-hidden transition-all duration-300 ease-in-out md:hidden", isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0')} role="navigation" aria-label="Mobile navigation">
+        <div id="mobile-menu" className={cn("overflow-hidden transition-all duration-300 ease-in-out md:hidden", isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0')} role="navigation" aria-label="Mobile navigation">
           {isOpen && (
-            <nav className="flex flex-col space-y-2 border-t border-zinc-800/50 pt-6 pb-6">
+            <nav className="flex flex-col space-y-1 border-t border-zinc-800/50 pt-4 pb-6 bg-zinc-950/95 backdrop-blur-xl">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                    className={cn(
-                    "rounded-lg px-4 py-3 text-sm font-medium transition-all duration-200",
+                    "rounded-lg px-4 py-4 text-base font-medium transition-all duration-200 touch-manipulation",
                     activePath === link.href
                       ? 'bg-zinc-800/50 text-primary border border-zinc-700/50'
-                      : 'text-zinc-300 hover:bg-zinc-800/30 hover:text-white'
+                      : 'text-zinc-300 hover:bg-zinc-800/30 hover:text-white active:bg-zinc-800/50'
                   )}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4">
+              <div className="pt-4 px-2">
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
                   aria-label="Book a cultural dance performance"
-                  className="w-full justify-center inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:scale-105 active:scale-95 h-10 px-4 py-2"
+                  className="w-full justify-center inline-flex items-center whitespace-nowrap rounded-lg text-base font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 active:scale-95 h-12 px-6 py-3 touch-manipulation"
                 >
                   Book Performance
                 </Link>
