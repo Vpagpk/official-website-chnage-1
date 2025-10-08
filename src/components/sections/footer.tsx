@@ -16,17 +16,17 @@ const Footer = () => {
       <div className="container py-16 sm:py-20 md:py-24 px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-8 sm:gap-10 md:gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: About */}
-          <div className="space-y-4 pr-0 lg:pr-8">
+          <div className="space-y-4 pr-0 lg:pr-8 sm:col-span-2 lg:col-span-1">
             <a href="/" className="mb-4 inline-block" aria-label="VPAG Home">
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/IMAGE00-1759911028053.webp"
                 alt="VPAG - Versatile Performing Art Group Logo"
-                width={120}
-                height={120}
-                className="object-contain"
+                width={100}
+                height={100}
+                className="object-contain w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28"
               />
             </a>
-            <h3 className="font-semibold text-lg text-white">
+            <h3 className="font-semibold text-base sm:text-lg text-white leading-tight">
               VPAG - Versatile Performing Art Group
             </h3>
             <p className="text-sm leading-relaxed text-zinc-400">
