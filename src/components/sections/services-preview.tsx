@@ -73,19 +73,19 @@ const ServicesPreview = () => {
                 {/* Top Border Accent */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                <div className="relative z-10 mb-8">
+                <div className="relative z-10 mb-6 sm:mb-8">
                   <div className="relative">
                     <div className="absolute inset-0 bg-primary/30 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
-                    <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary transition-all duration-500 group-hover:scale-125 group-hover:border-primary group-hover:rotate-12 group-hover:shadow-xl group-hover:shadow-primary/50">
-                      <item.icon className="w-10 h-10" />
+                    <div className="relative inline-flex items-center justify-center w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary transition-all duration-500 group-hover:scale-110 sm:group-hover:scale-125 group-hover:border-primary group-hover:rotate-12 group-hover:shadow-xl group-hover:shadow-primary/50">
+                      <item.icon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10" />
                     </div>
                   </div>
                 </div>
 
-                <h3 className="relative z-10 text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-300">
+                <h3 className="relative z-10 text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-white group-hover:text-primary transition-colors duration-300 leading-tight">
                   {item.title}
                 </h3>
-                <p className="relative z-10 text-zinc-300 leading-relaxed text-base group-hover:text-zinc-200 transition-colors duration-300">
+                <p className="relative z-10 text-zinc-300 leading-relaxed text-sm sm:text-base group-hover:text-zinc-200 transition-colors duration-300">
                   {item.description}
                 </p>
 
