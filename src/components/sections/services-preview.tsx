@@ -100,7 +100,7 @@ const ServicesPreview = () => {
           <Link
             href="/services"
             aria-label="Explore All Services"
-            className="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold border-2 border-zinc-700 bg-zinc-900/70 rounded-xl transition-all duration-500 hover:border-primary hover:bg-primary/10 hover:scale-110 hover:shadow-2xl hover:shadow-primary/30 active:scale-95 text-zinc-300 hover:text-white overflow-hidden"
+            className="group relative inline-flex w-full sm:w-auto items-center justify-center px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold border-2 border-zinc-700 bg-zinc-900/70 rounded-xl transition-all duration-500 hover:border-primary hover:bg-primary/10 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/30 active:scale-95 text-zinc-300 hover:text-white overflow-hidden touch-manipulation"
           >
             <span className="relative z-10">Explore All Services</span>
             <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
