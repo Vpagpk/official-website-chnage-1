@@ -66,7 +66,7 @@ const ServicesPreview = () => {
               className="animate-fade-in"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="h-full bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border-2 border-zinc-800/80 rounded-3xl p-8 text-center flex flex-col items-center group cursor-pointer transition-all duration-500 hover:-translate-y-4 hover:border-primary/60 hover:shadow-2xl hover:shadow-primary/20 will-change-transform relative overflow-hidden">
+              <div className="h-full bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border-2 border-zinc-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center flex flex-col items-center group cursor-pointer transition-all duration-500 hover:-translate-y-2 sm:hover:-translate-y-4 hover:border-primary/60 hover:shadow-2xl hover:shadow-primary/20 will-change-transform relative overflow-hidden touch-manipulation">
                 {/* Gradient Background on Hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 
