@@ -20,9 +20,9 @@ const Navigation = () => {
   const activePath = '/';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/50">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-zinc-950/90 border-b border-zinc-800/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-20 sm:h-24 items-center justify-between">
           <Link href="/" aria-label="VPAG - Versatile Performing Art Group" className="flex items-center group">
             <div className="relative bg-zinc-900/50 rounded-xl p-2.5 border border-zinc-800 group-hover:border-primary/30 transition-all duration-300">
               <Image
