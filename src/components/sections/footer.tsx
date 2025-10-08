@@ -108,13 +108,13 @@ const Footer = () => {
       
       {/* Bottom Bar */}
       <div className="border-t border-zinc-800/50">
-        <div className="container flex flex-col items-center justify-between gap-4 py-6 text-sm sm:flex-row">
-          <p className="text-center text-zinc-500 sm:text-left">
+        <div className="container flex flex-col items-center justify-between gap-4 py-6 px-4 sm:px-6 text-sm sm:flex-row">
+          <p className="text-center text-zinc-500 sm:text-left text-xs sm:text-sm">
             © 2025 VPAG - Versatile Performing Art Group. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <a href="/privacy" className="text-zinc-400 hover:text-primary transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm">Privacy Policy</a>
-            <a href="/terms" className="text-zinc-400 hover:text-primary transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm">Terms of Service</a>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <a href="/privacy" className="text-zinc-400 hover:text-primary transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm text-xs sm:text-sm">Privacy Policy</a>
+            <a href="/terms" className="text-zinc-400 hover:text-primary transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm text-xs sm:text-sm">Terms of Service</a>
           </div>
         </div>
       </div>
