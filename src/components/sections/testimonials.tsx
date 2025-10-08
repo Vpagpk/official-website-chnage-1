@@ -44,7 +44,7 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimonials)[0]; index: number }) => (
   <div 
-    className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border-2 border-zinc-800/80 rounded-3xl p-8 flex flex-col h-full shadow-lg hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-3 will-change-transform group relative overflow-hidden animate-fade-in"
+    className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border-2 border-zinc-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col h-full shadow-lg hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-1 sm:hover:-translate-y-3 will-change-transform group relative overflow-hidden animate-fade-in touch-manipulation"
     style={{ animationDelay: `${index * 100}ms` }}
   >
     {/* Gradient Overlay on Hover */}
