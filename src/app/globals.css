@@ -373,6 +373,76 @@
   .will-change-transform {
     will-change: transform;
   }
+
+  /* Mobile-first performance optimizations */
+  @media (max-width: 768px) {
+    .animate-float {
+      animation: none; /* Disable heavy animations on mobile */
+    }
+    
+    .animate-float-delayed {
+      animation: none;
+    }
+    
+    .animate-slow-zoom {
+      animation: none;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-float-delayed,
+    .animate-slow-zoom,
+    .animate-scroll,
+    .animate-pulse-subtle {
+      animation: none;
+    }
+    
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Touch optimization */
+  @media (hover: none) and (pointer: coarse) {
+    .group:hover {
+      transform: none;
+    }
+  }
+
+  /* Mobile typography optimizations */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      line-height: 1.3;
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  /* Mobile container improvements */
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 }
 
 /* Hide Next.js error overlay portal */
