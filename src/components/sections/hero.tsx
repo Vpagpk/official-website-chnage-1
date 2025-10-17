@@ -58,7 +58,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
 
-      <div className="relative z-10 container py-20 pt-32">
+      <div className="relative z-10 container py-20 pt-32 pb-32">
         <div className="max-w-5xl mx-auto text-center">
           {/* Main Heading with Staggered Animation */}
           <div className="animate-fade-in animate-duration-1000">
@@ -91,7 +91,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons with Enhanced Hover Effects */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-16 px-4 md:px-0 animate-fade-in animate-delay-700">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-12 px-4 md:px-0 animate-fade-in animate-delay-700">
             <Link href="/services" passHref>
               <Button
                 size="lg"
@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
 
           {/* Stats Grid with Enhanced Design */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto px-4 md:px-0 animate-fade-in animate-delay-900">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto px-4 md:px-0 animate-fade-in animate-delay-900 mb-20">
             {stats.map((stat, index) => (
               <div
                 key={index}
