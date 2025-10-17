@@ -24,13 +24,13 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" aria-label="VPAG - Versatile Performing Art Group" className="flex items-center group">
-            <div className="relative bg-zinc-900/50 rounded-lg p-1.5 border border-zinc-800 group-hover:border-primary/30 transition-all duration-300">
+            <div className="relative w-12 h-12 flex items-center justify-center">
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/IMAGE00-1759911028053.webp"
-                alt="VPAG - Versatile Performing Art Group"
-                width={40}
-                height={40}
-                className="w-10 h-auto object-contain transition-all duration-300 group-hover:scale-110"
+                alt="VPAG Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                 priority
               />
             </div>
