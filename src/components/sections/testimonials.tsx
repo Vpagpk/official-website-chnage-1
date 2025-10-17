@@ -44,7 +44,7 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimonials)[0]; index: number }) => (
   <div 
-    className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border-2 border-zinc-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col h-full shadow-lg hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-1 sm:hover:-translate-y-3 will-change-transform group relative overflow-hidden animate-fade-in touch-manipulation"
+    className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/80 border border-zinc-800/80 rounded-2xl p-6 flex flex-col h-full shadow-lg hover:border-primary/50 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 will-change-transform group relative overflow-hidden animate-fade-in"
     style={{ animationDelay: `${index * 100}ms` }}
   >
     {/* Gradient Overlay on Hover */}
@@ -54,33 +54,33 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimon
     <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
     <div className="relative z-10">
-      <div className="relative mb-6">
-        <div className="absolute -left-2 -top-2 w-16 h-16 bg-primary/10 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-        <Quote className="relative w-12 h-12 text-primary group-hover:scale-125 group-hover:rotate-12 transition-all duration-500" />
+      <div className="relative mb-4">
+        <div className="absolute -left-2 -top-2 w-12 h-12 bg-primary/10 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
+        <Quote className="relative w-10 h-10 text-primary group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
       </div>
       
-      <div className="flex items-center gap-1 mb-6">
+      <div className="flex items-center gap-1 mb-4">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-5 h-5 text-primary fill-primary transition-all duration-300 group-hover:scale-110" style={{ transitionDelay: `${i * 50}ms` }} />
+          <Star key={i} className="w-4 h-4 text-primary fill-primary transition-all duration-300 group-hover:scale-110" style={{ transitionDelay: `${i * 50}ms` }} />
         ))}
       </div>
       
-      <p className="text-zinc-300 flex-grow leading-relaxed text-sm sm:text-base mb-6 sm:mb-8 group-hover:text-zinc-200 transition-colors duration-300">"{testimonial.quote}"</p>
+      <p className="text-zinc-300 flex-grow leading-relaxed text-sm mb-6 group-hover:text-zinc-200 transition-colors duration-300">"{testimonial.quote}"</p>
       
-      <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-zinc-800/50 group-hover:border-primary/20 transition-colors duration-500">
-        <div className="relative flex-shrink-0">
+      <div className="flex items-center gap-3 pt-4 border-t border-zinc-800/50 group-hover:border-primary/20 transition-colors duration-500">
+        <div className="relative">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
           <Image
             src={testimonial.avatarUrl}
             alt={testimonial.name}
             width={48}
             height={48}
-            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-zinc-800 object-cover ring-2 ring-zinc-700 group-hover:ring-primary transition-all duration-500"
+            className="relative rounded-full bg-zinc-800 object-cover ring-2 ring-zinc-700 group-hover:ring-primary transition-all duration-500"
           />
         </div>
-        <div className="min-w-0 flex-1">
-          <h4 className="font-bold text-white text-base sm:text-lg group-hover:text-primary transition-colors duration-300 leading-tight">{testimonial.name}</h4>
-          <p className="text-xs sm:text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300 leading-tight">{testimonial.role}</p>
+        <div>
+          <h4 className="font-bold text-white text-base group-hover:text-primary transition-colors duration-300">{testimonial.name}</h4>
+          <p className="text-xs text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300">{testimonial.role}</p>
         </div>
       </div>
     </div>
@@ -89,32 +89,32 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: (typeof testimon
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="bg-gradient-to-b from-black via-zinc-950 to-black py-16 sm:py-20 md:py-28 lg:py-36 relative overflow-hidden">
+    <section id="testimonials" className="bg-gradient-to-b from-black via-zinc-950 to-black py-16 sm:py-20 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-1/4 w-48 sm:w-72 md:w-96 h-48 sm:h-72 md:h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #f59e0b 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="mx-auto max-w-4xl text-center mb-16 sm:mb-20 md:mb-24 animate-fade-in">
-          <div className="inline-block mb-4 sm:mb-6">
-            <span className="px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-bold uppercase tracking-wider">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="mx-auto max-w-3xl text-center mb-12 sm:mb-16 animate-fade-in">
+          <div className="inline-block mb-4">
+            <span className="px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider">
               Testimonials
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter text-white mb-6 sm:mb-8">
+          <h2 className="text-3xl font-black tracking-tighter text-white sm:text-4xl md:text-5xl mb-6">
             What People <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary">Say</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-zinc-300 font-medium">
+          <p className="text-lg md:text-xl leading-relaxed text-zinc-300 font-medium">
             Over 22 years of excellence, thousands of happy clients, and countless memorable performances. Here's what our clients say about working with V.PAG Dance Company.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16 sm:mb-20">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} index={index} />
           ))}
@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
         <div className="text-center animate-fade-in animate-delay-700">
           <Link
             href="/contact"
-            className="group relative inline-flex w-full sm:w-auto items-center justify-center bg-primary text-black font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-xl shadow-lg shadow-primary/30 transition-all duration-500 hover:bg-primary/90 hover:shadow-2xl hover:shadow-primary/50 hover:scale-105 sm:hover:scale-110 active:scale-95 text-base sm:text-lg overflow-hidden touch-manipulation"
+            className="group relative inline-flex items-center justify-center bg-primary text-black font-bold px-6 py-3 rounded-lg shadow-lg shadow-primary/30 transition-all duration-500 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/50 hover:scale-105 active:scale-95 text-base overflow-hidden"
           >
             <span className="relative z-10">Book Your Performance</span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

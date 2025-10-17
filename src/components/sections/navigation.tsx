@@ -20,29 +20,29 @@ const Navigation = () => {
   const activePath = '/';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-zinc-950/90 border-b border-zinc-800/50">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 sm:h-24 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           <Link href="/" aria-label="VPAG - Versatile Performing Art Group" className="flex items-center group">
-            <div className="relative bg-zinc-900/50 rounded-lg sm:rounded-xl p-2 sm:p-2.5 border border-zinc-800 group-hover:border-primary/30 transition-all duration-300">
+            <div className="relative bg-zinc-900/50 rounded-lg p-1.5 border border-zinc-800 group-hover:border-primary/30 transition-all duration-300">
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/IMAGE00-1759911028053.webp"
                 alt="VPAG - Versatile Performing Art Group"
-                width={56}
-                height={56}
-                className="w-10 sm:w-12 md:w-14 h-auto object-contain transition-all duration-300 group-hover:scale-110"
+                width={40}
+                height={40}
+                className="w-10 h-auto object-contain transition-all duration-300 group-hover:scale-110"
                 priority
               />
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-6" role="navigation" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center space-x-4" role="navigation" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "relative px-5 py-2.5 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-zinc-800/50",
+                  "relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-zinc-800/50",
                   activePath === link.href
                     ? 'text-primary bg-zinc-800/30'
                     : 'text-zinc-300 hover:text-white'
@@ -50,15 +50,15 @@ const Navigation = () => {
               >
                 {link.label}
                 {activePath === link.href && (
-                  <div className="absolute bottom-0 left-1/2 h-1 w-4 -translate-x-1/2 rounded-full bg-primary"></div>
+                  <div className="absolute bottom-0 left-1/2 h-0.5 w-3 -translate-x-1/2 rounded-full bg-primary"></div>
                 )}
               </Link>
             ))}
-            <div className="ml-6 pl-6 border-l border-zinc-700">
+            <div className="ml-4 pl-4 border-l border-zinc-700">
               <Link
                 href="/contact"
                 aria-label="Book a cultural dance performance"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:scale-105 hover:shadow-xl hover:shadow-primary/20 active:scale-95 h-10 px-4 py-2"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 active:scale-95 h-9 px-4 py-2"
               >
                 Book Performance
               </Link>
@@ -66,8 +66,8 @@ const Navigation = () => {
           </nav>
 
           <button
-            className="relative p-3 md:hidden hover:bg-zinc-800/50 rounded-lg transition-colors touch-manipulation"
-            aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
+            className="relative p-2 md:hidden hover:bg-zinc-800/50 rounded-lg transition-colors"
+            aria-label="Open mobile menu"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="flex h-5 w-6 flex-col justify-between">
@@ -78,30 +78,30 @@ const Navigation = () => {
           </button>
         </div>
         
-        <div id="mobile-menu" className={cn("overflow-hidden transition-all duration-300 ease-in-out md:hidden", isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0')} role="navigation" aria-label="Mobile navigation">
+        <div id="mobile-menu" className={cn("overflow-hidden transition-all duration-300 ease-in-out md:hidden", isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0')} role="navigation" aria-label="Mobile navigation">
           {isOpen && (
-            <nav className="flex flex-col space-y-1 border-t border-zinc-800/50 pt-4 pb-6 bg-zinc-950/95 backdrop-blur-xl">
+            <nav className="flex flex-col space-y-2 border-t border-zinc-800/50 pt-4 pb-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                    className={cn(
-                    "rounded-lg px-4 py-4 text-base font-medium transition-all duration-200 touch-manipulation",
+                    "rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200",
                     activePath === link.href
                       ? 'bg-zinc-800/50 text-primary border border-zinc-700/50'
-                      : 'text-zinc-300 hover:bg-zinc-800/30 hover:text-white active:bg-zinc-800/50'
+                      : 'text-zinc-300 hover:bg-zinc-800/30 hover:text-white'
                   )}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4 px-2">
+              <div className="pt-2">
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
                   aria-label="Book a cultural dance performance"
-                  className="w-full justify-center inline-flex items-center whitespace-nowrap rounded-lg text-base font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 active:scale-95 h-12 px-6 py-3 touch-manipulation"
+                  className="w-full justify-center inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:scale-105 active:scale-95 h-9 px-4 py-2"
                 >
                   Book Performance
                 </Link>

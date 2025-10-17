@@ -55,14 +55,14 @@ const HeroSection = () => {
       </div>
 
       {/* Animated Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float-delayed"></div>
 
-      <div className="relative z-10 container py-20 sm:py-24 md:py-32 pt-28 sm:pt-32 md:pt-40">
-        <div className="max-w-6xl mx-auto text-center">
+      <div className="relative z-10 container py-20 pt-32">
+        <div className="max-w-5xl mx-auto text-center">
           {/* Main Heading with Staggered Animation */}
-          <div className="animate-fade-in animate-duration-1000 px-4 sm:px-6">
-            <h1 className="font-display text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 sm:mb-10 tracking-tighter">
+          <div className="animate-fade-in animate-duration-1000">
+            <h1 className="font-display text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl mb-8 tracking-tighter">
               <span className="inline-block animate-slide-up">Premier</span>{' '}
               <span className="inline-block animate-slide-up animate-delay-100 text-transparent bg-clip-text bg-gradient-to-r from-primary via-amber-400 to-primary drop-shadow-2xl">
                 Cultural Dance
@@ -72,30 +72,30 @@ const HeroSection = () => {
           </div>
 
           {/* Feature List with Enhanced Icons */}
-          <div className="animate-fade-in animate-delay-300 animate-duration-1000 text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-100 mb-12 sm:mb-14 space-y-4 sm:space-y-6 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="animate-fade-in animate-delay-300 animate-duration-1000 text-base md:text-lg text-zinc-100 mb-10 space-y-4 leading-relaxed max-w-3xl mx-auto px-4 md:px-0">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-start sm:items-center justify-start sm:justify-center gap-3 sm:gap-4 md:gap-5 group animate-slide-up"
+                className="flex items-center justify-center gap-3 group animate-slide-up"
                 style={{ animationDelay: `${400 + index * 100}ms` }}
               >
-                <div className="relative flex-shrink-0">
-                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <span className="relative inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary shadow-lg group-hover:scale-125 group-hover:border-primary group-hover:shadow-primary/50 transition-all duration-500">
-                    <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                <div className="relative">
+                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
+                  <span className="relative inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/40 text-primary shadow-lg group-hover:scale-125 group-hover:border-primary group-hover:shadow-primary/50 transition-all duration-500">
+                    <feature.icon className="w-5 h-5" />
                   </span>
                 </div>
-                <span className="font-semibold text-sm sm:text-base md:text-lg lg:text-xl group-hover:text-primary transition-colors duration-300 leading-tight">{feature.text}</span>
+                <span className="font-semibold text-base md:text-lg group-hover:text-primary transition-colors duration-300">{feature.text}</span>
               </div>
             ))}
           </div>
 
           {/* CTA Buttons with Enhanced Hover Effects */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center mb-16 sm:mb-20 px-4 sm:px-6 animate-fade-in animate-delay-700">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-16 px-4 md:px-0 animate-fade-in animate-delay-700">
             <Link href="/services" passHref>
               <Button
                 size="lg"
-                className="group w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg font-bold transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden"
+                className="group h-12 px-8 text-base font-bold transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden"
                 aria-label="Book a Sufi dance performance"
               >
                 <span className="relative z-10">Book Sufi Performance</span>
@@ -106,7 +106,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg font-bold border-2 border-zinc-700 bg-zinc-900/70 backdrop-blur-xl transition-all duration-500 hover:bg-primary/10 hover:border-primary hover:text-primary hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-primary/20 active:scale-95"
+                className="h-12 px-8 text-base font-bold border-2 border-zinc-700 bg-zinc-900/70 backdrop-blur-xl transition-all duration-500 hover:bg-primary/10 hover:border-primary hover:text-primary hover:scale-105 hover:shadow-xl hover:shadow-primary/20 active:scale-95"
                 aria-label="View the dance gallery"
               >
                 View Dance Gallery
@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
 
           {/* Stats Grid with Enhanced Design */}
-          <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-5xl mx-auto px-4 sm:px-6 animate-fade-in animate-delay-900">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto px-4 md:px-0 animate-fade-in animate-delay-900">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -123,16 +123,16 @@ const HeroSection = () => {
                 style={{ animationDelay: `${1000 + index * 150}ms` }}
               >
                 {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 rounded-xl sm:rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 
                 {/* Card Content */}
-                <div className="relative text-center p-4 sm:p-6 md:p-8 lg:p-10 border-2 border-zinc-800/80 hover:border-primary/50 bg-gradient-to-br from-zinc-900/80 via-zinc-900/60 to-zinc-950/80 backdrop-blur-2xl shadow-2xl rounded-xl sm:rounded-2xl transition-all duration-500 group-hover:-translate-y-1 sm:group-hover:-translate-y-3 group-hover:shadow-primary/10 will-change-transform">
+                <div className="relative text-center p-6 border-2 border-zinc-800/80 hover:border-primary/50 bg-gradient-to-br from-zinc-900/80 via-zinc-900/60 to-zinc-950/80 backdrop-blur-2xl shadow-xl rounded-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-primary/10 will-change-transform">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
-                  <div className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-primary via-amber-400 to-primary mb-2 sm:mb-3 md:mb-4 transition-transform duration-500 group-hover:scale-110 sm:group-hover:scale-125 drop-shadow-2xl animate-pulse-subtle">
+                  <div className="font-display text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-primary via-amber-400 to-primary mb-2 transition-transform duration-500 group-hover:scale-110 drop-shadow-xl animate-pulse-subtle">
                     {stat.value}
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base lg:text-lg text-zinc-300 font-bold tracking-wider uppercase transition-colors duration-300 group-hover:text-white leading-tight">
+                  <p className="text-sm text-zinc-300 font-bold tracking-wider uppercase transition-colors duration-300 group-hover:text-white">
                     {stat.label}
                   </p>
                 </div>
@@ -143,9 +143,9 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-20">
-        <div className="w-8 h-12 border-2 border-zinc-700 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-scroll"></div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
+        <div className="w-6 h-10 border-2 border-zinc-700 rounded-full flex justify-center">
+          <div className="w-1 h-2 bg-primary rounded-full mt-2 animate-scroll"></div>
         </div>
       </div>
     </section>
